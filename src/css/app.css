@@ -1,0 +1,83 @@
+#game-board {
+  display: inline-block;
+  width: 320px;
+  height: 320px;
+  background-color: black;
+  margin-top: 40px;
+  margin-left: 40px;
+  border: 10px solid black;
+  border-radius: 10px;
+}
+
+.customLabel{
+  margin-top: 25px;
+  font-size: 29px;
+  font-style: italic;
+}
+
+.tile,
+.button {
+  text-align: center;
+  user-select: none;
+}
+
+.tile {
+  width: 100px;
+  height: 100px;
+  float: left;
+  line-height: 100px;
+  font-size: 50px;
+  background: #fff;
+  border-width: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tile:hover:not(:empty) {
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.2s, background 0.2s;
+          transition: transform 0.2s, background 0.2s;
+}
+
+.customSlide{
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.2s, background 0.2s;
+          transition: transform 0.2s, background 0.2s;
+}
+
+.custom-cell{
+  background-color: white;
+  border-style: outset;
+  border-color: #D8D8D8;
+  border-width: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.highlight {
+  background: #fff;
+ }
+
+.move-up {
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+}
+.move-right {
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
+}
+.move-down {
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+}
+.move-left {
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+}
+
+.button:hover {
+  cursor: pointer;
+  color: black;
+}
